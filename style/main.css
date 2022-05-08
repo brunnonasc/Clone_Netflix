@@ -1,0 +1,108 @@
+:root{
+    --vermelho: #E50914; /* variaveís*/
+    --preta: #141414;
+
+}
+
+/*Ponto Zero*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{
+    background: var(--preta);
+    font-family: 'Times New Roman';
+    color: white;
+ }
+
+ header .container{
+     display: flex; /*movimentação de elementos*/
+     flex-direction: row; /*default*/
+     align-items: center; /*alinhamento de documentos vertical*/
+     justify-content: space-between; /*espaço entre a tag <h2> e tag <nav>*/
+ }
+
+header .logo{
+    margin-left:5px ; /*movimentação do elemento referente a margem da tela*/
+    color: var(--vermelho);
+    font-family: "Arial Black";
+    font-size: 30px;    
+}
+
+header nav a{
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    text-decoration:none;
+    color: #aaa;
+    margin-right: 10px; /*distancia entre os links do menu */
+}
+/*efeito menu*/
+header nav a:hover{
+    color:#fff; 
+}
+.filme-principal{
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/capa-twd.jpg);
+    
+    height: 425px; /*dar tamanho para caixa*/
+    background-size: cover;/*pegar area de cobertura da caixa*/
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start ;
+    
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo {
+    margin-top: 10%;
+    font-size: 50px;
+    font-family: Helvetica, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0.50);
+    border: none;
+    color: white;
+    
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-family: 'Trebuchet MS';
+    cursor: pointer;
+    transition: 1s ease all;
+
+}
+
+.botao:hover{
+    background-color: rgba(240, 248, 255, 0.695);
+    color: black;
+}
+.botao i{
+    margin-right: 10px;
+
+}
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+     margin-top: 5px;
+}
